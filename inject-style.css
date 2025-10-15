@@ -9,6 +9,7 @@ html.ext-style h2,
 html.ext-style h3,
 html.ext-style .card__title,
 html.ext-style .calendar-scroll-mask,
+html.ext-style .calendar .calendar-content .card-title[data-v-49cfa5fb],
 html.ext-style p {
   color: #ffffff !important;
 }
