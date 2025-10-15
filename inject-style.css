@@ -24,7 +24,7 @@ html.ext-style .banner .banner-bg .banner-bottom-bg[data-v-dc3c63fb]{
 }
 
 html.ext-style .card__container .card__bottom .card__mask-bg[data-v-fccdcfb5]{
-  background-image: linear-gradient(360deg, #0f0f0f 0%, #0f0f0f 17.62%, rgba(66, 66, 66, 0.8) 35%, rgba(119, 119, 119, 0.2) 65%, rgba(255, 255, 255, 0) 100%); !important;
+  background-image: linear-gradient(360deg, #0f0f0f 0%, #0f0f0f 17.62%, rgba(66, 66, 66, 0.8) 35%, rgba(119, 119, 119, 0.2) 65%, rgba(255, 255, 255, 0) 100%) !important;
 }
 html.ext-style .scroll-cards {
   background-color: transparent;
