@@ -1,4 +1,15 @@
-document.documentElement.style.setProperty('--ext-bg', '#000000ff');
-document.documentElement.style.setProperty('--ext-text', '#f0f8ff');
-document.body.style.backgroundColor = 'var(--ext-bg)';
-document.body.style.color = 'var(--ext-text)';
+chrome.action.onClicked.addListener(async (tab) => {
+  chrome.tabs.sendMessage(tab.id, { type: 'toggleWm' }, (resp) => {
+    if (chrome.runtime.lastError) {
+      console.log('Injecting content script...');
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        files: ['content.js']
+      }).then(() => {
+        chrome.tabs.sendMessage(tab.id, { type: 'toggleWm' });
+      });
+    } else {
+      console.log('Toggle result:', resp);
+    }
+  });
+});

@@ -3,16 +3,21 @@
   "name": "Bstation+",
   "version": "1.0",
   "description": "Enhance your anime watching experience on bstation",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.bilibili.tv/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.svg"
   },
-  "permissions": ["activeTab", "storage"],
-  "host_permissions": ["https://*.bilibili.tv/*"],
   "content_scripts": [
     {
-      "matches": ["https://*.bilibili.tv/*"],
-      "js": ["background.js"]
+      "matches": ["https://www.bilibili.tv/*"],
+      "css": ["inject-style.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
   ]
 }

@@ -1,0 +1,24 @@
+html.ext-style body {
+  background-color: #0b0b0b !important;
+  color: #ffffff !important;
+}
+html.ext-style header {
+  background: #0f0f0f !important;
+  background-image: none !important;
+}
+
+html.ext-style span,
+html.ext-style h1,
+html.ext-style h2,
+html.ext-style h3,
+html.ext-style p {
+  color: #ffffff !important;
+}
+
+html.ext-style span::after {
+  color: #f0f0f0 !important;
+}
+
+.hidden {
+  display: none !important;
+}
