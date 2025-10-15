@@ -1,11 +1,8 @@
 html.ext-style body {
-  background-color: #0b0b0b !important;
+  background-color: #0f0f0f !important;
   color: #ffffff !important;
 }
-html.ext-style header {
-  background: #0f0f0f !important;
-  background-image: none !important;
-}
+
 
 html.ext-style span,
 html.ext-style h1,
@@ -15,8 +12,16 @@ html.ext-style p {
   color: #ffffff !important;
 }
 
-html.ext-style span::after {
+html.ext-style .bstar-header:not(.transparent) {
+  background-color: #0f0f0f !important;
+}
+
+html.ext-style :where(.bstar-header__action[data-v-66ffa610]:not(.transparent)) {
   color: #f0f0f0 !important;
+}
+
+html.ext-style .bstar-header__action.transparent {
+  background-color: transparent !important;
 }
 
 .hidden {
