@@ -16,6 +16,23 @@ html.ext-style .bstar-header:not(.transparent) {
   background-color: #0f0f0f !important;
 }
 
+html.ext-style .bstar-header-search-bar:not(.transparent) {
+  background-color: #222222 !important;
+}
+
+html.ext-style .bstar-header__download-btn:not(.transparent) {
+  color: #f0f0f0 !important;
+  background-color: #565656 !important;
+}
+
+html.ext-style .bstar-header-search-bar:not(.transparent) .bstar-header-search-bar__input {
+  color: #ffffff !important;
+}
+
+html.ext-style .bstar-header-search-bar:not(.transparent)::placeholder .bstar-header-search-bar__input::placeholder {
+  color: #565656 !important;
+}
+
 html.ext-style :where(.bstar-header__action[data-v-66ffa610]:not(.transparent)) {
   color: #f0f0f0 !important;
 }
