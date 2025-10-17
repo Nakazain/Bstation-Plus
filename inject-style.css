@@ -8,7 +8,7 @@ html.ext-style h1,
 html.ext-style h2,
 html.ext-style h3,
 html.ext-style .card__title,
-html.ext-style .calendar-scroll-mask,
+html.ext-style .bstar-header-search-top,
 html.ext-style .bstar-sidebar__link,
 html.ext-style .bstar-sidebar__footer,
 html.ext-style .bstar-header__download-btn:not(.transparent),
@@ -19,7 +19,9 @@ html.ext-style p {
 }
 
 html.ext-style .anime,
-html.ext-style .card__title{
+html.ext-style .card__title,
+html.ext-style .bstar-header:not(.transparent),
+html.ext-style .bstar-header-search-history__item {
   background-color: #0f0f0f !important;
 }
 
@@ -31,6 +33,14 @@ html.ext-style .banner .banner-bg .banner-bottom-bg[data-v-dc3c63fb]{
 html.ext-style .card__container .card__bottom .card__mask-bg[data-v-fccdcfb5]{
   background-image: linear-gradient(360deg, #0f0f0f 0%, #0f0f0f 17.62%, rgba(66, 66, 66, 0.8) 35%, rgba(119, 119, 119, 0.2) 65%, rgba(255, 255, 255, 0) 100%) !important;
 }
+html.ext-style .bstar-header__popover-view-all[data-v-9965641f]{
+  background-image: linear-gradient(180deg,rgba(255,255,255,0) 9.09%,rgba(25, 25, 25, 0.85) 100%) !important;
+}
+
+html.ext-style .bstar-header-search-top-card__desc>span.desc-style[data-v-15d4e7de] {
+  border-color: rgba(255, 255, 255, 0.2);;
+}
+
 html.ext-style .scroll-cards,
 html.ext-style .bstar-header__empty[data-v-2939f223],
 html.ext-style .bstar-header-search-suggest__item[data-v-35d4c6d1] {
@@ -41,12 +51,11 @@ html.ext-style .view-all[data-v-289055f4] {
   background-image: none;
 }
 
-html.ext-style .bstar-header:not(.transparent) {
-  background-color: #0f0f0f !important;
-}
-
-html.ext-style .bstar-header-search-bar:not(.transparent) {
+html.ext-style .bstar-header-search-bar:not(.transparent){
   background-color: #222222 !important;
+}
+html.ext-style .bstar-header__dropdown-content{
+  background: #222222 !important;
 }
 
 html.ext-style .bstar-sidebar[data-v-aecf9399]:not(.bstar-sidebar--mobile) {
